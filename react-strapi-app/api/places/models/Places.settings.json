@@ -1,0 +1,63 @@
+{
+  "connection": "default",
+  "collectionName": "places",
+  "info": {
+    "name": "places",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Latitude": {
+      "type": "float"
+    },
+    "Longitude": {
+      "type": "float"
+    },
+    "Barangay": {
+      "type": "string"
+    },
+    "Municipality": {
+      "type": "string"
+    },
+    "Directions": {
+      "type": "string"
+    },
+    "Photo-Still": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Video": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Photo-360": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Video-URL": {
+      "type": "string"
+    },
+    "Photo-Still-URL": {
+      "type": "string"
+    },
+    "Photo-360-URL": {
+      "type": "string"
+    }
+  }
+}
